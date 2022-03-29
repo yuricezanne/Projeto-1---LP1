@@ -11,5 +11,5 @@
     int[] casas = new int[myList.Count];
 
     Console.WriteLine($"Name normal: {string.Join(", ", myList)}");
-    Console.WriteLine($"Name suffled: {string.Join(", ", finalList)}");
+    Console.WriteLine($"Name shuffled: {string.Join(", ", finalList)}");
 }
