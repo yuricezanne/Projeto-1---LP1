@@ -1,13 +1,15 @@
-﻿internal class Tabuleiro
+﻿public static void Main()
 {
-    public static void Main()
-    {
-        Random rnd = new Random();
-        List<string> myList = new List<string> { "normal", "snakes", "ladders", "cobra", "boost", "u-turn", "extra dice", "cheat dice" };
+    Random rnd = new Random();
+    List<string> myList = new List<string> { "normal", "snakes", "ladders", "cobra", "boost", "u-turn", "extra dice", "cheat dice" };
 
-        var randomized = myList.OrderBy(item => rnd.Next());
+    var randomized = myList.OrderBy(item => rnd.Next());
+    List<string> finalList = randomized.ToList();
+    finalList.Insert(0, "normal");
+    finalList.Add("normal");
 
-        Console.WriteLine($"Name normal: {string.Join(", ", myList)}");
-        Console.WriteLine($"Name suffled: {string.Join(", ", randomized)}");
-    }
+    int[] casas = new int[myList.Count];
+
+    Console.WriteLine($"Name normal: {string.Join(", ", myList)}");
+    Console.WriteLine($"Name suffled: {string.Join(", ", finalList)}");
 }
