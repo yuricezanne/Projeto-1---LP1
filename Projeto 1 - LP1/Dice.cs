@@ -20,16 +20,16 @@
             switch (player.Name)
             {
                 case "Player 1":
-                    Console.WriteLine("Player 1, press NumPad 1 to roll the dice.");
-                    if (Console.ReadKey().Key == ConsoleKey.NumPad1)
+                    Console.WriteLine("Player 1, press M to roll the dice.");
+                    if (Console.ReadKey().Key == ConsoleKey.M)
                     {
                         Console.WriteLine("You rolled a " + diceNumber);
                         return diceNumber;
                     }
                     break;
                 case "Player 2":
-                    Console.WriteLine("Player 2, press NumPad 2 to roll the dice.");
-                    if (Console.ReadKey().Key == ConsoleKey.NumPad2)
+                    Console.WriteLine("Player 2, press C to roll the dice.");
+                    if (Console.ReadKey().Key == ConsoleKey.C)
                     {
                         Console.WriteLine("You rolled a " + diceNumber);
                         return diceNumber;

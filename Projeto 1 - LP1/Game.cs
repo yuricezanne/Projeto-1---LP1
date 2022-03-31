@@ -42,6 +42,9 @@
                 }
                 else
                 {
+                    player2.CurrentSquare += dice.DiceNumberGenerator(player2);
+                    player2.CurrentSquare = SquareChecker(createdBoard, player2.CurrentSquare);
+
                     currentPlayer = player1.Name;
                 }
             }
