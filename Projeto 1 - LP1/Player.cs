@@ -1,5 +1,8 @@
 ﻿namespace Projeto_1___LP1
 {
+    /// <summary>
+    /// Class player
+    /// </summary>
     public class Player
     {
         public string Name { get; set; }

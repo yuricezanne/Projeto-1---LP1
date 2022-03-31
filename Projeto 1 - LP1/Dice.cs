@@ -1,7 +1,15 @@
 ﻿namespace Projeto_1___LP1
 {
+    /// <summary>
+    /// Class Dice
+    /// </summary>
     public class Dice
     {
+        /// <summary>
+        /// Generates dice number
+        /// </summary>
+        /// <param name="player"></param>
+        /// <returns></returns>
         public int DiceNumberGenerator(
             Player player)
         {

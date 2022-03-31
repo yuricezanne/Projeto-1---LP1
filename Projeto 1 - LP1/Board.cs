@@ -1,17 +1,27 @@
 ﻿namespace Projeto_1___LP1
 {
+    /// <summary>
+    /// Class board
+    /// </summary>
     public class Board
     {
+        /// <summary>
+        /// Create the game board
+        /// </summary>
+        /// <returns></returns>
         public SortedDictionary<int, string> BoardGenerator()
         {
             Random rnd = new Random();
             List<string> myList = new List<string> { "normal", "snakes", "snakes", "ladders", "ladders", "cobra", "boost", "u-turn", "extra dice", "cheat dice" };
-            List<string> shuffledList = myList.OrderBy(i => Guid.NewGuid()).ToList(); //Ordena aleatoriamente os conteudos da lista de cima
+            //Shuffles previously created list
+            List<string> shuffledList = myList.OrderBy(i => Guid.NewGuid()).ToList(); 
 
+            //Add first and last entries of the board
             SortedDictionary<int, string> board = new SortedDictionary<int, string>();
             board.Add(1, "normal");
             board.Add(25, "normal");
 
+            //Add random entries to the board
             for (int i = 2; i < myList.Count; i++)
             {
                 board.Add(i, shuffledList[i]);
@@ -54,11 +64,6 @@
 
                 board.Add(i, myList[randomEntry]);
             }
-
-            var lines = board.Select(kvp => kvp.Key + ": " + kvp.Value.ToString());
-            Console.WriteLine(string.Join(Environment.NewLine, lines));
-            Console.WriteLine(board.Values.Where(a => a.Equals("snakes")).Count());
-
             return board;
         }
     }
