@@ -1,15 +1,10 @@
-﻿public static void Main()
+﻿using Projeto_1___LP1;
+
+public class Program
 {
-    Random rnd = new Random();
-    List<string> myList = new List<string> { "normal", "snakes", "ladders", "cobra", "boost", "u-turn", "extra dice", "cheat dice" };
-
-    var randomized = myList.OrderBy(item => rnd.Next());
-    List<string> finalList = randomized.ToList();
-    finalList.Insert(0, "normal");
-    finalList.Add("normal");
-
-    int[] casas = new int[myList.Count];
-
-    Console.WriteLine($"Name normal: {string.Join(", ", myList)}");
-    Console.WriteLine($"Name shuffled: {string.Join(", ", finalList)}");
+    public static void Main()
+    {
+        MainMenu mainMenu = new MainMenu();
+        MainMenu.GameBoot();
+    }
 }
