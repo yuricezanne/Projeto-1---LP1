@@ -16,6 +16,8 @@
 
 ## Arquitetura da solução
 
+Este Código foi feito usando .NET 6.0
+
 O código foi estruturado por classes, pois, o mesmo fica mais organizado e compacto.
 
 Algoritmos não triviais como dados PowerUp foram adicionados no jogo final para dar mais opções aos jogadores.
