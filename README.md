@@ -2,14 +2,14 @@
 
 ## Autores
 
-António Vasco Costa, a22103073
-Bernardo Schmidt, a22101694
-Yuri Pinto, a22100545
+- António Vasco Costa, a22103073
+- Bernardo Schmidt, a22101694
+- Yuri Pinto, a22100545
 
 ## Cargos
-António Vasco Costa - Programação do jogo
-Bernardo Schmidt - README.mk, Fluxograma 
-Yuri Pinto - Programação do jogo
+- António Vasco Costa - Programador Fundamental
+- Bernardo Schmidt - README.mk, Fluxograma, Programação, Revisor do código
+- Yuri Pinto - Programador Fundamental
 
 ## Repositório Git
 [Repositório Git](https://github.com/yuricezanne/Projeto-1---LP1)
