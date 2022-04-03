@@ -23,7 +23,7 @@ O código foi estruturado por classes, pois, o mesmo fica mais organizado e comp
 Algoritmos não triviais como dados PowerUp foram adicionados no jogo final para dar mais opções aos jogadores.
 
 ### Fluxograma
-![Fluxograma Lógico](https://raw.githubusercontent.com/yuricezanne/Projeto-1---LP1/master/Fluxograma%20Lógico%20Jogo%20Completo.jpg)
+![Fluxograma Lógico](https://cdn.discordapp.com/attachments/898574766070439958/960250687005007892/Fluxograma_Logico_Jogo_Completo.jpg)
 
 ## Referências
 Trocando ideias com colegas e amigos que trabalham e estudam na mesma área, optamos por usar um sistema de SortedDictionary para a criação do tabuleiro.
