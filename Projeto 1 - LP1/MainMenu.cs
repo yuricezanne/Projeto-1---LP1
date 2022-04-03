@@ -18,6 +18,15 @@
                 Game game = new Game();
                 game.StartGame();
             }
+
+            Console.WriteLine("Game end, press SPACEBAR for another round!");
+
+            if (Console.ReadKey().Key == ConsoleKey.Spacebar)
+            {
+                Console.Clear();
+                Game game = new Game();
+                game.StartGame();
+            }
         }
     }
 }

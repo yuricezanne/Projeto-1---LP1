@@ -21,13 +21,16 @@
             board.Add(1, "normal");
             board.Add(25, "normal");
 
+            int id = 1;
+
             //Add random entries to the board
-            for (int i = 2; i < myList.Count; i++)
+            foreach (var item in shuffledList)
             {
-                board.Add(i, shuffledList[i]);
+                id++;
+                board.Add(id, item);
             }
 
-            for (int i = 13; i < 25; i++)
+            for (int i = 12; i < 25; i++)
             {
                 var randomEntry = rnd.Next(myList.Count);
 

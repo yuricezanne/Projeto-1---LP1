@@ -23,7 +23,7 @@
                     Console.WriteLine("Player 1, press M to roll the dice.");
                     if (Console.ReadKey().Key == ConsoleKey.M)
                     {
-                        Console.WriteLine("You rolled a " + diceNumber);
+                        Console.WriteLine("\nYou rolled a " + diceNumber);
                         return diceNumber;
                     }
                     break;
@@ -31,12 +31,12 @@
                     Console.WriteLine("Player 2, press C to roll the dice.");
                     if (Console.ReadKey().Key == ConsoleKey.C)
                     {
-                        Console.WriteLine("You rolled a " + diceNumber);
+                        Console.WriteLine("\nYou rolled a " + diceNumber);
                         return diceNumber;
                     }
                     break;
             }
-            return 0;
+            return diceNumber;
         }
     }   
 }
